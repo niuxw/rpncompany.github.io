@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Product example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script>
+      // init controller
+      var controller = new ScrollMagic.Controller();
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./css/about.css" rel="stylesheet">
+    <link href="./css/service.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="index.html" aria-label="Product">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg> -->
+          <img src="logo.png" alt="RPN" width="20" height="20">
+          REPAIR AND PERSERVATION
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="carousel.html">About</a>
+        <a class="py-2 d-none d-md-inline-block" href="tech.html">Technology</a>
+        <a class="py-2 d-none d-md-inline-block" href="service.html">Services</a>
+        <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://rpngo.com/">Login</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">SignUp</a>
+      </div>
+    </nav>
+
+    <style type="text/css">
+      .digit {
+        opacity: 0;
+        -webkit-transform: translateX(-40px);
+          -moz-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+            -o-transform: translateX(-40px);
+                transform: translateX(-40px);
+        -webkit-transition: all 1s ease-out;
+          -moz-transition: all 1s ease-out;
+            -ms-transition: all 1s ease-out;
+            -o-transition: all 1s ease-out;
+                transition: all 1s ease-out;
+      }
+      .digit.visible {
+        opacity: 1;
+        -webkit-transform: none;
+          -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+                transform: none;
+      }
+      .digit:nth-child(2) {
+        margin-top: 10px;
+      }
+      .digit:nth-child(3) {
+        margin-top: 10px;
+      }
+      .digit:nth-child(4) {
+        margin-top: 10px;
+      }
+      .digit:nth-child(5) {
+        margin-top: 10px;
+      }
+    </style>
+    <!-- <div class="spacer s2"></div>
+    <div class="spacer s0"></div> -->
+    <section id="sevice-header" class="jumbotron text-center">
+      <div class="container">
+        <h1 style="color: white;">OUR SERVICES</h1>
+        <p class="lead text-white">
+          At Repair and Preservation Network, we are dedicated to helping stabilize communities by offering our preserve, maintain, repair and restore services to our clients on their portfolios of owned and/or serviced properties. We provide a complete range of services for properties including occupancy/condition inspection, preservation, maintenance, repair, restoration (including insurance claims) and compliance services on presale, foreclosed, or owned properties.
+        </p>
+      </div>
+    </section>
+    <div class="spacer s0"></div>
+
+    <div id="reveal-elements">
+      <div id="inspections" class="digit gray">
+        <div class="text-left">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+              <p class="display-4 font-weight-normal">Property Inspections</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="text-center pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <p class="lead font-weight-normal">RPN provides a full range of regulatory-compliant residential and commercial inspection services to meet each client’s operating needs and business goals. Our nationwide network of professional...</p>
+            <p class="lead font-weight-normal"> Our inspections support:</p>
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            Exterior inspection
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            Interior inspection
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            Code compliance
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            Insurance loss inspection
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            FEMA disaster
+          </div>
+          <div class="pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <img src="img/service/index-inspection.jpg" width="600px" height="400px">
+          </div>
+        </div>
+      </div>
+
+      <div id="repairs" class=" digit gray">
+        <div class="text-left">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+              <p class="display-4 font-weight-normal">Property Repairs</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="text-center pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <p class="lead font-weight-normal">RPN provides a full range of regulatory-compliant residential and commercial inspection services to meet each client’s operating needs and business goals. Our nationwide network of professional...</p>
+            <p class="lead font-weight-normal"> Our inspections support:</p>
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            Bio-hazard remediation
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Safety hazard repair
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Demolition
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Interior & exterior repairs and rehabilitation
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Landscaping        
+          </div>
+          <div class="pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <img src="img/service/index-repair.jpg" width="600px" height="400px">
+          </div>
+        </div>
+      </div>
+
+      <div id="preservation" class=" digit gray">
+        <div class="text-left">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+              <p class="display-4 font-weight-normal">Property Preservation</p>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="text-center pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <p class="lead font-weight-normal">RPN provides a full range of regulatory-compliant residential and commercial inspection services to meet each client’s operating needs and business goals. Our nationwide network of professional...</p>
+            <p class="lead font-weight-normal"> Our inspections support:</p>
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            Winterization
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Lawn & yard maintenance
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Snow and ice removal services
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Hazardous material and debris removal
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Convey maintenance        
+          </div>
+          <div class="pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <img src="img/service/index-preservation.jpg" width="600px" height="400px">
+          </div>
+        </div>
+      </div>
+
+      <div id="reo" class=" digit gray">
+        <div class="text-left">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+              <p class="display-4 font-weight-normal">REO & Insurance Services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="text-center pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <p class="lead font-weight-normal">RPN provides a full range of regulatory-compliant residential and commercial inspection services to meet each client’s operating needs and business goals. Our nationwide network of professional...</p>
+            <p class="lead font-weight-normal"> Our inspections support:</p>
+            <p class="lead font-weight-normal" style="font-size:110%;">
+            REO Maintenance
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            REO Repairs
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Sales clean
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Hazard claims
+            <p class="lead font-weight-normal" style="font-size:110%;">
+
+            Property restoration        
+            
+        </div>
+          <div class="pl-md-5 pt-md-5 pr-md-5 pb-md-5">
+            <img src="img/service/index-reo.jpeg" width="600px" height="400px">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="spacer s2"></div>
+    <script>
+        // build scenes
+        var revealElements = document.getElementsByClassName("digit");
+        for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+          new ScrollMagic.Scene({
+            triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+            offset: 50,												 // start a little later
+            triggerHook: 0.7,
+          })
+          .setClassToggle(revealElements[i], "visible") // add class toggle
+          .addIndicators({name: "t2_ " + i}) // add indicators (requires plugin)
+          .addTo(controller);
+        }
+    </script>
+  
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="logo.png" alt="RPN" width="50" height="50">
+          <small class="d-block mb-3 text-muted">
+            &copy; 2020
+          </small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Address</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">10 Old Mamaroneck Road, Unit 1A White Plains, NY, 10605</a></li>
+            <li><a href="https://goo.gl/maps/t9XUT7PdgdzjYhBQ8">Show In Map</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Regional Address</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">1820 Northwest 118th Street #220, Clive, IA, 50325</a></li>
+            <li><a href="https://goo.gl/maps/4YRaBR8D7sshQATVA">Show In Map</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contact</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Tel: (866)776-8880</a></li>
+            <li><a class="text-muted" href="#">Fax: (866)968-6156</a></li>
+            <li><a href="mailto: info@rpncompany.com">Email to us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Follow us</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <img src="img/iconfinder_201_Linkedin_logo_logos_4373199.png" width="20" height="20">
+              <a class="text-muted" href="#">LinkedIn</a></li>
+            <li>
+              <img src="img/iconfinder_twitter_173834.png" width="25" height="25">
+              <a class="text-muted" href="#">Twitter</a></li>
+            <li>
+              <img src="img/iconfinder_facebook_317746.png" width="20" height="20">
+              <a class="text-muted" href="#">Facebook</a></li>
+            <li>
+              <img src="img/iconfinder_Instagram_1298747.png" width="20" height="20">
+              <a class="text-muted" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-between" style="margin-left: 20vw; margin-right: 20vw;">
+        <a href="https://nmsdc.org/"><img src="img/cert-img/NMSDC_Logo_Pack/CERIFIED_2020.png" width="110" height="100"></a>
+        <a href="https://www.wbenc.org/"><img src="img/cert-img/WBE_Seal_RGB/WBE_Seal_RGB.jpg" width="120" height="70"></a>
+      </div>
+    </footer>
+    <hr
+      -moz-border-bottom-colors: none;
+      -moz-border-image: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+      border-style: solid none;
+      border-width: 1px 0;
+      margin: 18px 0;
+    >
+    
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">Copyright &copy; 2020 All rights reserved</p>
+      <p class="mb-1">10 Old Mamaroneck Road, Unit 1A White Plains, NY, 10605 (<a href="https://goo.gl/maps/t9XUT7PdgdzjYhBQ8">Show In Map</a>)</p>
+      <p class="mb-1">Tel: +1 (866) 776-8880 &#9900; Fax: +1 (866) 968-6156 &#9900; <a href="mailto: info@rpncompany.com">Email to us</a></p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.jumbotron {
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 0; */
+  /* background-color: #fff; */
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+#info0 {
+  background-image: url(img/about-company-2.jpg);
+}
+#info1 {
+  background-image: url(img/index_our_goal.jpg);
+}
+#info2 {
+  background-image: url(img/about-company-3.jpg);
+}

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Product example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script>
+      // init controller
+      var controller = new ScrollMagic.Controller();
+    </script>
+
+    <script src="./js/bootstrap.js"></script>
+  
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      #info0 {
+        background-image: url(img/about-company-2.jpg);
+      }
+      #pinContainer {
+        width: 100vw;
+        height: 100vh;
+        
+        position: relative;
+      }
+      .panel {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+    <link href="./css/contract.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="index.html" aria-label="Product">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg> -->
+          <img src="logo.png" alt="RPN" width="20" height="20">
+          REPAIR AND PERSERVATION
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="carousel.html">About</a>
+        <a class="py-2 d-none d-md-inline-block" href="tech.html">Technology</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Blogs</a>
+        <a class="py-2 d-none d-md-inline-block" href="service.html">Services</a>
+        <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
+        <a class="py-2 d-none d-md-inline-block" href="https://rpngo.com/">Login</a> 
+        <!-- need employee equality system -->
+        <!-- <a class="py-2 d-none d-md-inline-block" href="#" data-toggle="modal" data-target="#myModal">SignUp</a> -->
+        <button type="button" class="btn btn-signup" data-toggle="modal" data-target=".bd-example-modal-lg">Sign up</button>
+      </div>
+    </nav>
+
+    <!-- <div id="pinContainer">
+      <div id="info0" class="panel text-center">
+        <h1 class="mb-4 section1-text1 display-4 font-weight-normal">Contact Us</h1>
+      </div>
+    </div> -->
+  
+    <div class="contact-text">
+      <div class="contact-font text-center">
+        <h1>
+          <img src="logo.png" alt="RPN" width="60" height="60">
+          REPAIR AND PERSERVATION NETWORK<br>
+        </h1>
+        <p>          
+          1820 Northwest 118th Street #220<br>
+          Clive, Iowa, 50325<br>
+          T. +1 866 776-8880<br>
+          F. +1 866 968-6156<br>
+          <a href="mailto:info@rpncompany.com">info@rpncompany.com</a><br>
+          </p>
+      </div>
+    </div>
+    <div class="follow-us">
+      <span class="follow-us-font-size">
+        Follow us:
+      </span>
+      <div style="height: 100%;">
+        <ul id="ul_top_hypers">
+
+          <li>
+            <a href="#" target="_blank">
+              <img src="./img/social-media/facebook1.svg" width="25px" height="25px">
+            </a>
+          </li>
+
+          <li style="padding-left:1em">
+            <a href="#" target="_blank">
+              <img src="./img/social-media/twitter1.svg" width="25px" height="25px">
+            </a>
+          </li>
+
+          <li style="padding-left:1em">
+            <a href="#" target="_blank">
+              <img src="./img/social-media/linkedin1.svg" width="25px" height="25px">
+            </a>
+          </li>
+          <li style="padding-left:1em">
+            <a href="#" target="_blank">
+              <img src="./img/social-media/ins1.svg" width="25px" height="25px">
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-transparent">
+      <div>
+        <p>WRITE TO US</p>
+      </div>
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <form style="background-color: transparent;">
+          <div class="form-group mb-5">
+            <!-- <label for="exampleFormControlInput1">Your Name</label> -->
+            <input type="text" class="form-control input-area shadow-none" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="form-group mb-5">
+            <!-- <label for="exampleFormControlInput1">Email Address</label> -->
+            <input type="email" class="form-control input-area shadow-none" id="exampleFormControlInput1" placeholder="Email">
+          </div>
+          <div class="form-group mb-5">
+            <!-- <label for="exampleFormControlInput1">Phone</label> -->
+            <input type="text" class="form-control input-area shadow-none" id="exampleFormControlInput1" placeholder="phone">
+          </div>
+          <div class="form-group mb-5">
+            <!-- <label for="exampleFormControlInput1">Subject</label> -->
+            <input type="text" class="form-control input-area shadow-none" id="exampleFormControlInput1" placeholder="subject">
+          </div>
+          <div class="form-group mb-5">
+            <!-- <label for="exampleFormControlSelect1">How do you know us</label> -->
+            <select class="form-control input-area shadow-none custom-select" id="exampleFormControlSelect1">
+              
+              <option>How do you know us?</option>
+              <option>Social Media</option>
+              <option>Google Search</option>
+              <option>Conference or Trade Shows</option>
+              <option>Emails</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleFormControlTextarea1">Message</label> -->
+            <textarea class="form-control input-area shadow-none" id="exampleFormControlTextarea1" rows="2" placeholder="message"></textarea>
+          </div>
+        </form>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.2325871293287!2d-93.78006608426821!3d41.60748189028417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ec20da3882bfa5%3A0xc85a3dcd86753642!2s1820%20NW%20118th%20St%20%23220%2C%20Clive%2C%20IA%2050325!5e0!3m2!1sen!2sus!4v1590506782990!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="logo.png" alt="RPN" width="50" height="50">
+          <small class="d-block mb-3 text-muted">
+            &copy; 2020
+          </small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Coroprate Address</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">10 Old Mamaroneck Road, Unit 1A White Plains, NY, 10605</a></li>
+            <li><a href="https://goo.gl/maps/t9XUT7PdgdzjYhBQ8">Show In Map</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Regional Address</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">1820 Northwest 118th Street #220, Clive, IA, 50325</a></li>
+            <li><a href="https://goo.gl/maps/4YRaBR8D7sshQATVA">Show In Map</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contact</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Tel: (866)776-8880</a></li>
+            <li><a class="text-muted" href="#">Fax: (866)968-6156</a></li>
+            <li><a href="mailto: info@rpncompany.com">Email to us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Follow us</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <img src="img/iconfinder_201_Linkedin_logo_logos_4373199.png" width="20" height="20">
+              <a class="text-muted" href="#">LinkedIn</a></li>
+            <li>
+              <img src="img/iconfinder_twitter_173834.png" width="25" height="25">
+              <a class="text-muted" href="#">Twitter</a></li>
+            <li>
+              <img src="img/iconfinder_facebook_317746.png" width="20" height="20">
+              <a class="text-muted" href="#">Facebook</a></li>
+            <li>
+              <img src="img/iconfinder_Instagram_1298747.png" width="20" height="20">
+              <a class="text-muted" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-between" style="margin-left: 20vw; margin-right: 20vw;">
+        <a href="https://nmsdc.org/"><img src="img/cert-img/NMSDC_Logo_Pack/CERIFIED_2020.png" width="110" height="100"></a>
+        <a href="https://www.wbenc.org/"><img src="img/cert-img/WBE_Seal_RGB/WBE_Seal_RGB.jpg" width="120" height="70"></a>
+      </div>
+    </footer>
+    <hr
+      -moz-border-bottom-colors: none;
+      -moz-border-image: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+      border-style: solid none;
+      border-width: 1px 0;
+      margin: 18px 0;
+    >
+    
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">Copyright &copy; 2020 All rights reserved</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>  
+  </body>
+</html>

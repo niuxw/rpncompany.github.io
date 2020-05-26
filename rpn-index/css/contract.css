@@ -1,0 +1,58 @@
+.map {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#contact-form {
+    box-sizing: border-box;
+    padding: 0 16.666666vw;
+}
+
+.input-area {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+.custom-select {
+    /* border: none;
+    margin-right: 10px; */
+    background-color: transparent;
+}
+
+#exampleFormControlSelect1 option {
+    margin-bottom: 10em;
+}
+
+.contact-text {
+    height: calc(100vh - 5em - 12em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1.625em;
+}
+
+.contact-font {
+    font-size: 1.5em;
+    letter-spacing: 0.11em;
+    line-height: 1.4;
+}
+
+.follow-us {
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 3em;
+}
+
+.follow-us-font-size {
+    font-size: 18px;
+}
+#ul_top_hypers li{
+    display: inline;
+}
